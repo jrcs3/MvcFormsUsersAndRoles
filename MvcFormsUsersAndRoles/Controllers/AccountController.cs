@@ -10,6 +10,7 @@ using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
 using MvcFormsUsersAndRoles.Models;
 using Microsoft.AspNet.Identity.EntityFramework;
+using System.Web.UI;
 
 namespace MvcFormsUsersAndRoles.Controllers
 {
@@ -56,6 +57,7 @@ namespace MvcFormsUsersAndRoles.Controllers
         //
         // GET: /Account/Login
         [AllowAnonymous]
+        [OutputCache(NoStore = true, Location = OutputCacheLocation.None)]
         public ActionResult Login(string returnUrl)
         {
             if(User != null && User.Identity != null && User.Identity.IsAuthenticated == true)
