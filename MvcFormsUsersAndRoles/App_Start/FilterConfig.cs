@@ -24,7 +24,7 @@ namespace MvcFormsUsersAndRoles
         {
             filterContext.ExceptionHandled = true;
             filterContext.Result = new RedirectToRouteResult(
-                new RouteValueDictionary(new { action = "Login", controller = "Account" }));
+                new RouteValueDictionary(new { action = "TokenError", controller = "Account" }));
         }
     }
 }

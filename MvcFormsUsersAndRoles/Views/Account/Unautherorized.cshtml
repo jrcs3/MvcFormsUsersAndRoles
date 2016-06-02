@@ -1,0 +1,9 @@
+﻿@using Microsoft.AspNet.Identity
+@{
+    ViewBag.Title = "Unautherorized";
+}
+
+<h2>Unautherorized</h2>
+
+<p>@string.Format("Sorry {0}, you can't come here. {1}", User.Identity.Name, User.Identity.GetUserId())</p>
+
