@@ -1,0 +1,31 @@
+<VSTemplate Version="2.0.0" Type="Item" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+    <TemplateData>
+        <Name>Add Forms Authentication to MVC Project</Name>
+        <Icon>Simiographics-Secure-PadLock.ico</Icon>
+        <Description>An example of a multi-file item template</Description>
+        <ProjectType>CSharp</ProjectType>
+    </TemplateData>
+    <TemplateContent>
+      <ProjectItem TargetFileName="FormsAuthReadMe.txt" OpenInEditor="true">
+        FormsAuthReadMe.txt
+      </ProjectItem>
+<ProjectItem TargetFileName="App_Start\FormsAuthConfig.cs" ReplaceParameters="true">App_Start\FormsAuthConfig.cs</ProjectItem>
+<ProjectItem TargetFileName="Controllers\RolesAdminController.cs" ReplaceParameters="true">Controllers\RolesAdminController.cs</ProjectItem>
+<ProjectItem TargetFileName="Controllers\UsersAdminController.cs" ReplaceParameters="true">Controllers\UsersAdminController.cs</ProjectItem>
+<ProjectItem TargetFileName="Controllers\SeedUserController.cs" ReplaceParameters="true">Controllers\SeedUserController.cs</ProjectItem>
+<ProjectItem TargetFileName="Models\FormsAuthViewModel.cs" ReplaceParameters="true">Models\FormsAuthViewModel.cs</ProjectItem>
+<ProjectItem TargetFileName="Views\RolesAdmin\Create.cshtml" ReplaceParameters="true">Views\RolesAdmin\Create.cshtml</ProjectItem>
+<ProjectItem TargetFileName="Views\RolesAdmin\Delete.cshtml" ReplaceParameters="true">Views\RolesAdmin\Delete.cshtml</ProjectItem>
+<ProjectItem TargetFileName="Views\RolesAdmin\Details.cshtml" ReplaceParameters="true">Views\RolesAdmin\Details.cshtml</ProjectItem>
+<ProjectItem TargetFileName="Views\RolesAdmin\Edit.cshtml" ReplaceParameters="true">Views\RolesAdmin\Edit.cshtml</ProjectItem>
+<ProjectItem TargetFileName="Views\RolesAdmin\Index.cshtml" ReplaceParameters="true">Views\RolesAdmin\Index.cshtml</ProjectItem>
+<ProjectItem TargetFileName="Views\UsersAdmin\Create.cshtml" ReplaceParameters="true">Views\UsersAdmin\Create.cshtml</ProjectItem>
+<ProjectItem TargetFileName="Views\UsersAdmin\Delete.cshtml" ReplaceParameters="true">Views\UsersAdmin\Delete.cshtml</ProjectItem>
+<ProjectItem TargetFileName="Views\UsersAdmin\Details.cshtml" ReplaceParameters="true">Views\UsersAdmin\Details.cshtml</ProjectItem>
+<ProjectItem TargetFileName="Views\UsersAdmin\Edit.cshtml" ReplaceParameters="true">Views\UsersAdmin\Edit.cshtml</ProjectItem>
+<ProjectItem TargetFileName="Views\UsersAdmin\Index.cshtml" ReplaceParameters="true">Views\UsersAdmin\Index.cshtml</ProjectItem>
+<ProjectItem TargetFileName="Views\SeedUser\Register.cshtml" ReplaceParameters="true">Views\SeedUser\Register.cshtml</ProjectItem>
+<ProjectItem TargetFileName="Views\SeedUser\RoleManagerIsNotSetUp.cshtml" ReplaceParameters="true">Views\SeedUser\RoleManagerIsNotSetUp.cshtml</ProjectItem>
+<ProjectItem TargetFileName="Views\SeedUser\SeedUserAlreadExists.cshtml" ReplaceParameters="true">Views\SeedUser\SeedUserAlreadExists.cshtml</ProjectItem>
+    </TemplateContent>
+</VSTemplate>

@@ -1,13 +1,13 @@
-﻿using Microsoft.AspNet.Identity;
+using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.AspNet.Identity.Owin;
-using MvcFormsUsersAndRoles.Models;
+using $rootnamespace$.Models;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
 
-namespace MvcFormsUsersAndRoles.Controllers
+namespace $rootnamespace$.Controllers
 {
     public class SeedUserController : Controller
     {

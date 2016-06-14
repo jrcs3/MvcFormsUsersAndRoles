@@ -1,7 +1,7 @@
-﻿using Microsoft.AspNet.Identity;
+using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.AspNet.Identity.Owin;
-using MvcFormsUsersAndRoles.Models;
+using $rootnamespace$.Models;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
@@ -10,7 +10,7 @@ using System.Web;
 using System.Web.Mvc;
 
 
-namespace MvcFormsUsersAndRoles.Controllers
+namespace $rootnamespace$.Controllers
 {
     [Authorize(Roles = "Admin")]
     public class RolesAdminController : Controller

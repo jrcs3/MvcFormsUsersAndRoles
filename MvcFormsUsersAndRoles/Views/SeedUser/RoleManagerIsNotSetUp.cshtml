@@ -1,0 +1,15 @@
+﻿
+@{
+    ViewBag.Title = "Role Manager Is Not Setup";
+}
+
+<h2>Role Manager Is Not Setup</h2>
+
+<p>
+    In the file App_Start/Startup.Auth.cs, in the StartUp class, there is a method called ConfigureAuth(), add the
+    following line after "app.CreatePerOwinContext(ApplicationDbContext.Create);":
+</p>
+<pre>
+ app.CreatePerOwinContext&lt;ApplicationRoleManager&gt;(ApplicationRoleManager.Create);
+</pre>
+
