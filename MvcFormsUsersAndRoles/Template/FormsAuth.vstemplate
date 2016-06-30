@@ -1,6 +1,6 @@
 ﻿<VSTemplate Version="2.0.0" Type="Item" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
     <TemplateData>
-        <Name>Add Forms Authentication to MVC Project</Name>
+        <Name>Forms Auth Role and User CRUD for MVC Project using ASP.NET Identity</Name>
         <Icon>Simiographics-Secure-PadLock.ico</Icon>
         <Description>An example of a multi-file item template</Description>
         <ProjectType>CSharp</ProjectType>

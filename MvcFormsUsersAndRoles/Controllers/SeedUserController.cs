@@ -70,7 +70,7 @@ namespace MvcFormsUsersAndRoles.Controllers
             }
         }
         //
-        // GET: /Account/Register
+        // GET: /SeedUser/Register
         [AllowAnonymous]
         public ActionResult Register()
         {
@@ -86,7 +86,7 @@ namespace MvcFormsUsersAndRoles.Controllers
         }
 
         //
-        // POST: /Account/Register
+        // POST: /SeedUser/Register
         [HttpPost]
         [AllowAnonymous]
         [ValidateAntiForgeryToken]
