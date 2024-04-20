@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <title>@ViewBag.Title - Mvc Forms Users And Roles</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 
@@ -12,34 +12,43 @@
     <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                @Html.ActionLink("Mvc Forms Users And Roles", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
             </div>
-<div class="navbar-collapse collapse">
-    <ul class="nav navbar-nav">
-        <li>@Html.ActionLink("Home", "Index", "Home")</li>
-        <li>@Html.ActionLink("About", "About", "Home")</li>
-        <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-
-        @if (Request.IsAuthenticated && User.IsInRole("Admin"))
-        {
-            <li>@Html.ActionLink("RolesAdmin", "Index", "RolesAdmin")</li>
-            <li>@Html.ActionLink("UsersAdmin", "Index", "UsersAdmin")</li>
-        }
-    </ul>
-    @Html.Partial("_LoginPartial")
-</div>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                @Html.ActionLink("Home", "Index", "Home", new object { }, new { @class = "navbar-brand" })
+                            </li>
+                            <li class="nav-item">
+                                @Html.ActionLink("About", "About", "Home", new object { }, new { @class = "navbar-brand" })
+                            </li>
+                            @if (Request.IsAuthenticated && User.IsInRole("Admin"))
+                            {
+                                <li class="nav-item">
+                                    @Html.ActionLink("RolesAdmin", "Index", "RolesAdmin", new object { }, new { @class = "navbar-brand" })
+                                </li>
+                                <li class="nav-item">
+                                    @Html.ActionLink("UsersAdmin", "Index", "UsersAdmin", new object { }, new { @class = "navbar-brand" })
+                                </li>
+                            }
+                            @Html.Partial("_LoginPartial")
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
         </div>
     </div>
     <div class="container body-content">
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+            <p>&copy; 2016-@DateTime.Now.Year - Mvc Forms Users And Roles</p>
         </footer>
     </div>
 

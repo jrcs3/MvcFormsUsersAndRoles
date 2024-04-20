@@ -16,7 +16,7 @@ namespace MvcFormsUsersAndRoles.Controllers
 
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
+            ViewBag.Message = "Another page to navigate to.";
 
             return View();
         }
